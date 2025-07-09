@@ -1,7 +1,9 @@
+import "./home.css"
 function Home(){
     return(
-    
-        <h1>Hello wold</h1>
+        <div className="Header">
+            <h1>Header</h1>
+        </div>
     )
 }
 export default Home;
