@@ -40,6 +40,119 @@ li {
   border: none;
 }
 
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-card-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  border-left: none;
+  padding-left: 0;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* NEW STYLES FOR WHY CHOOSE PGMS? SECTION */
+
+.benefits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.benefit-item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 30%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  cursor: pointer; /* Indicate interactivity */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Added background-color to transition */
+}
+
+.benefit-item:hover {
+  transform: translateY(-8px); /* More pronounced lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  background-color: #e6f2ff; /* Light blue background on hover */
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  color: #0073e6;
+  margin-bottom: 0.8rem;
+}
+
+.benefit-item p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0;
+}
+
+.benefit-item p strong {
+  color: #003366;
+}
+
+/* Responsive adjustments for benefit items */
+@media (max-width: 767px) {
+  .benefits-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit-item {
+    max-width: 90%;
+  }
+}
+
 section.cta {
   background-color: #003366;
   width: 100%;
@@ -80,6 +193,7 @@ section.cta p {
 
 .intro-slide {
   opacity: 0;
+  padding-left: 40px;
   transform: translateX(-100px);
   animation: slideInLeft 1s ease-out forwards;
 }
