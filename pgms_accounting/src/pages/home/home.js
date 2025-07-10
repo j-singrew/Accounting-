@@ -97,7 +97,7 @@ function Home(){
 <section className="cta">
   <h2>Ready to Make Life Easier?</h2>
   <p>Let’s simplify your tax and accounting, so you can focus on growing your business.</p>
-  <a href="contact.html" className="btn">Contact Us Today</a>
+  <a href="/Contact" className="btn">Contact Us Today</a>
 </section>
 
         </>

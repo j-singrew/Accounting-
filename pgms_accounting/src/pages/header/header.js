@@ -44,7 +44,7 @@ function Header() {
       <div style={overlayStyle}></div>
       <div style={contentStyle(visible)}>
         <h1>Making life easier for you</h1>
-        <h3>~PGMS accounting~</h3>
+        <h3>~PGMS Accountants~</h3>
       </div>
     </header>
   );
