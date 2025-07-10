@@ -1,3 +1,25 @@
+/* Ensure the list container has adequate space */
+html body ul,
+html body ol {
+  height: auto !important;       /* Allow the list container to expand with content */
+  width: auto !important;        /* Allow the width to adjust */
+  list-style-type: disc;         /* Ensure bullet points for unordered lists */
+  list-style-position: outside;  /* Position bullets outside the content box */
+  padding-left: 30px;            /* Add space for the bullets/numbers */
+  margin: 1em 0;                 /* Add back default vertical margins */
+}
+
+/* This will override any user agent 'display: none' on li */
+html body li {
+  display: list-item !important; /* Forces the list item display with markers */
+}
+
+/* For ordered lists, ensure numbers */
+html body ol {
+  list-style-type: decimal;
+}
+
+/* Your existing body and code styles */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

@@ -1,0 +1,29 @@
+.navbar-container {
+  display: flex; /* Arrange children (logo and nav) in a row */
+  justify-content: space-between; /* Push logo to left, nav to right */
+  align-items: center; /* Vertically center them */
+  padding: 1rem 2rem; /* Add some padding around the whole navbar */
+  background-color: #f8f8f8; /* Example background for the navbar area */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Adjust the .logo margin if it's now in a flex container */
+.logo {
+  max-width: 70px;
+  height: auto;
+  display: block;
+  margin: 0; /* Remove auto margin if flexbox is handling alignment */
+  padding: 0; /* Remove padding if container handles it */
+}
+
+.navbar .nav-link {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #003366;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #0073e6;
+}
