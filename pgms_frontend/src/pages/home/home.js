@@ -2,11 +2,13 @@ import "./home.css"
 import Header from '../header/header';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import  Navbar from '../Navbar/Navbar'
 
 function Home(){
     return(
         <>
         <Header />
+        <Navbar /> 
         <Helmet>
         <title>PGMS Accounting Services | Tax & Payroll in George</title>
         <meta
@@ -19,11 +21,9 @@ function Home(){
         <meta property="og:url" content="https://www.edenbiz.info/" />
         <meta property="og:type" content="website" />
       </Helmet>
-        <div className="Header">
-            <header>
-                
-            </header>
-        </div>
+      <div className="body">
+        
+      </div>
         </>
     )
 }
