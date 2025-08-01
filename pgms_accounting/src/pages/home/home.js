@@ -58,6 +58,30 @@ function Home(){
     </div>
   </div>
 </section>
+<section className="experience-section">
+  <div className="experience-content">
+    <h2>17 Years of Trusted Accounting Expertise</h2>
+    <p>
+      For over 17 years, we have been helping businesses navigate their finances with accuracy, integrity, and personalized service.
+      Our experienced team is committed to providing solutions tailored to your unique needs.
+    </p>
+    <div className="experience-stats">
+      <div className="stat">
+        <span className="number">17</span>
+        <span className="label">Years of Experience</span>
+      </div>
+      <div className="stat">
+        <span className="number">500+</span>
+        <span className="label">Satisfied Clients</span>
+      </div>
+      <div className="stat">
+        <span className="number">1000+</span>
+        <span className="label">Tax Returns Filed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 
