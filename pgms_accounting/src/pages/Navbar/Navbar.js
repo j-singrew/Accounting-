@@ -6,7 +6,8 @@ import './Navbar.css';
 function Navbar() {
   return (
     <div className="navbar-container"> 
-      <img src="/pgms.png" alt="PGMS Accounting Services Logo" className="logo" />
+      <img src="/PGMS Main.png" alt="PGMS Accounting Services Logo" className="logo" />
+ 
       <h1>PGMS Accountants</h1>
       <nav className="navbar">
         <a href="/" className="nav-link">Home</a>
