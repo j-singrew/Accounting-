@@ -27,7 +27,29 @@ function Home(){
   <p>Partnering with you to simplify tax, accounting, and management — so you can focus on growth.</p>
 </div>
 
-
+<section className="experience-section">
+  <div className="experience-content">
+    <h2>17 Years of Trusted Accounting Expertise</h2>
+    <p>
+      For over 17 years, we have been helping businesses navigate their finances with accuracy, integrity, and personalized service.
+      Our experienced team is committed to providing solutions tailored to your unique needs.
+    </p>
+    <div className="experience-stats">
+      <div className="stat">
+        <span className="number">17</span>
+        <span className="label">Years of Experience</span>
+      </div>
+      <div className="stat">
+        <span className="number">500+</span>
+        <span className="label">Satisfied Clients</span>
+      </div>
+      <div className="stat">
+        <span className="number">1000+</span>
+        <span className="label">Tax Returns Filed</span>
+      </div>
+    </div>
+  </div>
+</section>
 <section className="services">
   <div className="container">
     <h2>What We Do</h2>
@@ -58,31 +80,6 @@ function Home(){
     </div>
   </div>
 </section>
-<section className="experience-section">
-  <div className="experience-content">
-    <h2>17 Years of Trusted Accounting Expertise</h2>
-    <p>
-      For over 17 years, we have been helping businesses navigate their finances with accuracy, integrity, and personalized service.
-      Our experienced team is committed to providing solutions tailored to your unique needs.
-    </p>
-    <div className="experience-stats">
-      <div className="stat">
-        <span className="number">17</span>
-        <span className="label">Years of Experience</span>
-      </div>
-      <div className="stat">
-        <span className="number">500+</span>
-        <span className="label">Satisfied Clients</span>
-      </div>
-      <div className="stat">
-        <span className="number">1000+</span>
-        <span className="label">Tax Returns Filed</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 
 
 <section className="why-us">
@@ -106,6 +103,7 @@ function Home(){
         <i className="benefit-icon fas fa-lightbulb"></i> {/* Example Icon: Lightbulb */}
         <p><strong>A proactive approach</strong> that saves you time and money</p>
       </div>
+      
     </div>
 
     <p>Imagine having a team of dedicated professionals by your side, navigating the intricate world of taxes. Our tax services go beyond mere compliance – we strategically plan and optimize your tax position to help you minimize liabilities and maximize savings. With us, tax season becomes an opportunity for growth rather than a burden.</p>
