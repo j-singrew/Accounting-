@@ -69,31 +69,31 @@ function Contact() {
 
 <section className="team-section">
         <div className="container">
-          <h2>Meet Our Team</h2>
-          <div className="team-grid">
-            {/* Melanie Burrows Card */}
-            <div className="person-card">
-              <img src="/images/melanie.png" alt="Melanie Burrows" className="person-image" /> {/* Placeholder image */}
-              <h3>Melanie Burrows</h3>
-              <p className="title">Managing Member</p>
-              <p className="contact-detail"><strong>Contact:</strong> 081 561 0508</p>
-              <p className="contact-detail"><strong>Email:</strong> pgms@edenbiz.info</p>
-              <p className="contact-detail"><strong>Address:</strong> 112 York Street, George, 6530</p>
-            </div>
+  <h2>Meet Our Team</h2>
+<div className="team-grid">
+  {/* Melanie Burrows Card */}
+  <div className="person-card">
+    <img src="/Malny_burrows.png" alt="Melanie Burrows" className="person-image" />
+    <h3>Melanie Burrows</h3>
+    <p className="title">Managing Member</p>
+    <p className="contact-detail"><strong>Contact:</strong> 081 561 0508</p>
+    <p className="contact-detail"><strong>Email:</strong> pgms@edenbiz.info</p>
+    <p className="contact-detail"><strong>Address:</strong> 112 York Street, George, 6530</p>
+  </div>
 
-            {/* Florence De Abreu Card */}
-            <div className="person-card">
-              <img src="/images/florence.png" alt="Florence De Abreu" className="person-image" /> {/* Placeholder image */}
-              <h3>Florence De Abreu</h3>
-              <p className="title">Administrator</p>
-              <p className="contact-detail"><strong>Contact:</strong> 068 251 2998</p>
-              <p className="contact-detail"><strong>Email:</strong> reception@edenbiz.info</p>
-              <p className="contact-detail"><strong>Address:</strong> 112 York Street, George, 6530</p>
-            </div>
+  {/* Florence De Abreu Card */}
+  <div className="person-card">
+    <img src="/images/theo.png" alt="Theo Burrows" className="person-image" /> {/* Placeholder image */}
+    <h3>Florence De Abreu</h3>
+    <p className="title">Administrator</p>
+    <p className="contact-detail"><strong>Contact:</strong> 068 251 2998</p>
+    <p className="contact-detail"><strong>Email:</strong> reception@edenbiz.info</p>
+    <p className="contact-detail"><strong>Address:</strong> 112 York Street, George, 6530</p>
+  </div>
 
             {/* Theo Burrows Card */}
             <div className="person-card">
-              <img src="/images/theo.png" alt="Theo Burrows" className="person-image" /> {/* Placeholder image */}
+            <img src="/theo_burrows.png" alt="Florence De Abreu" className="person-image" />
               <h3>Theo Burrows</h3>
               <p className="title">Tax Practitioner</p>
               <p className="contact-detail"><strong>Contact:</strong> 067 900 5232</p>
