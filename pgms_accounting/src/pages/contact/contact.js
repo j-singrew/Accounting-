@@ -80,6 +80,14 @@ function Contact() {
     <p className="contact-detail"><strong>Email:</strong> pgms@edenbiz.info</p>
     <p className="contact-detail"><strong>Address:</strong> 112 York Street, George, 6530</p>
   </div>
+              <div className="person-card">
+            <img src="/theo_burrows.png" alt="Florence De Abreu" className="person-image" />
+              <h3>Theo Burrows</h3>
+              <p className="title">Tax Practitioner</p>
+              <p className="contact-detail"><strong>Contact:</strong> 067 900 5232</p>
+              <p className="contact-detail"><strong>Email:</strong> admin@edenbiz.info</p>
+              <p className="contact-detail"><strong>Address:</strong> 112 York Street, George, 6530</p>
+            </div> 
 
   {/* Florence De Abreu Card */}
   <div className="person-card">
@@ -92,14 +100,6 @@ function Contact() {
   </div>
 
             {/* Theo Burrows Card */}
-            <div className="person-card">
-            <img src="/theo_burrows.png" alt="Florence De Abreu" className="person-image" />
-              <h3>Theo Burrows</h3>
-              <p className="title">Tax Practitioner</p>
-              <p className="contact-detail"><strong>Contact:</strong> 067 900 5232</p>
-              <p className="contact-detail"><strong>Email:</strong> admin@edenbiz.info</p>
-              <p className="contact-detail"><strong>Address:</strong> 112 York Street, George, 6530</p>
-            </div>
           </div>
         </div>
       </section>
