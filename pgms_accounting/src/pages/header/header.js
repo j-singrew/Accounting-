@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import headerImage from '../assets/pexels-leeloothefirst-6929024.jpg'; 
 
-
 const headerContainer = {
   position: 'relative',
-  backgroundImage: `url(${headerImage })`,
+  backgroundImage: `url(${headerImage})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   height: '300px',
@@ -24,7 +23,7 @@ const overlayStyle = {
 const contentStyle = (visible) => ({
   position: 'relative',
   zIndex: 2,
-  color: 'black',
+  color: '#FF6600',       // Changed text color here
   textAlign: 'center',
   transform: visible ? 'translateY(0)' : 'translateY(-100%)',
   transition: 'transform 0.8s ease-out',
@@ -35,7 +34,6 @@ function Header() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-
     setVisible(true);
   }, []);
 
