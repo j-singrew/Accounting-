@@ -39,19 +39,19 @@ function Home(){
   <div className="experience-stats">
     <div className="stat">
       <span className="number">
-        <CountUp end={17} duration={2} enableScrollSpy />
+        <CountUp end={17} duration={2} enableScrollSpy scrollSpyOnce />
       </span>
       <span className="label">Years of Experience</span>
     </div>
     <div className="stat">
       <span className="number">
-        <CountUp end={500} duration={2.5} suffix="+" enableScrollSpy />
+        <CountUp end={500} duration={2.5} suffix="+" enableScrollSpy scrollSpyOnce />
       </span>
       <span className="label">Satisfied Clients</span>
     </div>
     <div className="stat">
       <span className="number">
-        <CountUp end={1000} duration={3} suffix="+" enableScrollSpy />
+        <CountUp end={1000} duration={3} suffix="+" enableScrollSpy scrollSpyOnce />
       </span>
       <span className="label">Tax Returns Filed</span>
     </div>
