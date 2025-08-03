@@ -3,6 +3,8 @@ import Header from '../header/header';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import  Navbar from '../Navbar/Navbar'
+import CountUp from 'react-countup';
+
 
 function Home(){
     return(
@@ -29,26 +31,32 @@ function Home(){
 
 <section className="experience-section">
   <div className="experience-content">
-    <h2>17 Years of Trusted Accounting Expertise</h2>
-    <p>
-      For over 17 years, we have been helping businesses navigate their finances with accuracy, integrity, and personalized service.
-      Our experienced team is committed to providing solutions tailored to your unique needs.
-    </p>
-    <div className="experience-stats">
-      <div className="stat">
-        <span className="number">17</span>
-        <span className="label">Years of Experience</span>
-      </div>
-      <div className="stat">
-        <span className="number">500+</span>
-        <span className="label">Satisfied Clients</span>
-      </div>
-      <div className="stat">
-        <span className="number">1000+</span>
-        <span className="label">Tax Returns Filed</span>
-      </div>
+  <h2>17 Years of Trusted Accounting Expertise</h2>
+  <p>
+    For over 17 years, we have been helping businesses navigate their finances with accuracy, integrity, and personalized service.
+    Our experienced team is committed to providing solutions tailored to your unique needs.
+  </p>
+  <div className="experience-stats">
+    <div className="stat">
+      <span className="number">
+        <CountUp end={17} duration={2} enableScrollSpy />
+      </span>
+      <span className="label">Years of Experience</span>
+    </div>
+    <div className="stat">
+      <span className="number">
+        <CountUp end={500} duration={2.5} suffix="+" enableScrollSpy />
+      </span>
+      <span className="label">Satisfied Clients</span>
+    </div>
+    <div className="stat">
+      <span className="number">
+        <CountUp end={1000} duration={3} suffix="+" enableScrollSpy />
+      </span>
+      <span className="label">Tax Returns Filed</span>
     </div>
   </div>
+</div>
 </section>
 <section className="services">
   <div className="container">
