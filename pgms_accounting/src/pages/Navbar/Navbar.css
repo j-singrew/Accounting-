@@ -3,7 +3,8 @@
   justify-content: space-between; /* Push logo to left, nav to right */
   align-items: center; /* Vertically center them */
   padding: 1rem 2rem; /* Add some padding around the whole navbar */
-  background-color: #f8f8f8; /* Example background for the navbar area */
+  background-color: #f8f8f8;
+  color: #003366; /* Example background for the navbar area */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
 }
 

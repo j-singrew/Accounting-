@@ -65,7 +65,8 @@ function Home(){
       {/* Service Card 1: Tax Services - NOW USING AN IMAGE */}
       <div className="service-card">
         {/* Corrected path: Removed project folder and public folder from src */}
-        <img src="/budget.png" alt="Tax Services Icon" className="service-card-icon" />
+
+        <img src="/budget_new .png" alt="Tax Services Icon" className="service-card-icon" />
         <h3>Tax Services</h3>
         <p>Strategic planning to reduce liabilities and keep you compliant.</p>
       </div>
@@ -81,7 +82,7 @@ function Home(){
       {/* Service Card 3: Management Support - NOW USING AN IMAGE */}
       <div className="service-card">
         {/* Corrected path: Removed project folder and public folder from src */}
-        <img src="/budget.png" alt="Management Support Icon" className="service-card-icon" />
+        <img src="/presentation.png" alt="Management Support Icon" className="service-card-icon" />
         <h3>Management Support</h3>
         <p>Cash flow management, budgeting, and forecasting tailored to you.</p>
       </div>
