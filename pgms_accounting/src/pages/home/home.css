@@ -99,7 +99,7 @@ li {
 
 .service-card p {
   font-size: 1rem;
-  color: #555;
+  color: #003366;
   margin-bottom: 0;
 }
 
@@ -278,4 +278,7 @@ a:hover {
   font-weight: 600;
   font-size: 1rem;
   color: #7f8c8d;
+}
+.services{
+  background-color: coral;
 }
