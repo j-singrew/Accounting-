@@ -1,5 +1,11 @@
-.pgms-header {
+.header-sticky-wrap {
   position: relative;
+}
+
+.pgms-header {
+  position: sticky;
+  top: 70px;
+  z-index: 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,10 +18,14 @@
   overflow: hidden;
 }
 
+.header-scroll-spacer {
+  height: 35vh;
+}
+
 .pgms-header .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(125deg, rgba(5, 29, 51, 0.78), rgba(19, 76, 130, 0.52));
+  background: linear-gradient(125deg, rgba(4, 22, 39, 0.88), rgba(0, 69, 112, 0.7));
 }
 
 .header-content {
@@ -26,6 +36,7 @@
   transition: transform 0.65s ease, opacity 0.65s ease;
   padding: 1.3rem;
   max-width: 760px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
 }
 
 .header-content.visible {
@@ -37,21 +48,68 @@
   margin: 0;
   font-size: clamp(1.8rem, 4vw, 2.7rem);
   line-height: 1.15;
+  color: #ffffff;
 }
 
 .header-content h3 {
   margin: 0.8rem 0 0;
   font-size: clamp(1rem, 2vw, 1.2rem);
-  font-weight: 500;
-  opacity: 0.95;
+  font-weight: 600;
+  color: #f3f9ff;
+  opacity: 1;
+}
+
+.scroll-indicator {
+  margin-top: 1.05rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  color: #e9f4ff;
+}
+
+.scroll-indicator small {
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.scroll-mouse {
+  width: 21px;
+  height: 34px;
+  border: 2px solid rgba(255, 255, 255, 0.88);
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.scroll-dot {
+  width: 4px;
+  height: 8px;
+  border-radius: 999px;
+  background: #ffffff;
+  animation: scrollDot 1.5s ease-in-out infinite;
+}
+
+@keyframes scrollDot {
+  0% { opacity: 0.9; transform: translateY(0); }
+  70% { opacity: 0.2; transform: translateY(10px); }
+  100% { opacity: 0; transform: translateY(10px); }
 }
 
 @media (max-width: 768px) {
   .pgms-header {
     min-height: 260px;
+    top: 62px;
   }
 
   .header-content {
     padding: 1rem;
+  }
+
+  .header-scroll-spacer {
+    height: 24vh;
   }
 }

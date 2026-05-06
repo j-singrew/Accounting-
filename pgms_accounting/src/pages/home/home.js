@@ -99,15 +99,30 @@ function Home(){
     <p>We’re not just accountants — we’re your long-term partners in success. Since 2006, PGMS has helped entrepreneurs thrive by offering:</p>
     <div className="benefits-grid">
       <div className="benefit-item reveal">
-        <span className="benefit-icon" aria-hidden="true">🤝</span>
+        <span className="benefit-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path d="M7 12.5 3.8 9.3a1.6 1.6 0 1 1 2.2-2.2L9.3 10.4a2.5 2.5 0 0 0 3.5 0l2.1-2.1a1.6 1.6 0 1 1 2.2 2.2l-3 3a5.6 5.6 0 0 1-7.9 0Z" />
+            <path d="M5.5 14.2a2 2 0 0 1 2.8 0l1.3 1.3a2 2 0 1 1-2.8 2.8L5.5 17a2 2 0 0 1 0-2.8Zm8.2 0a2 2 0 0 1 2.8 0l1.3 1.3a2 2 0 1 1-2.8 2.8L13.7 17a2 2 0 0 1 0-2.8Z" />
+          </svg>
+        </span>
         <p><strong>Personalized service</strong> tailored to your business</p>
       </div>
       <div className="benefit-item reveal">
-        <span className="benefit-icon" aria-hidden="true">🛡️</span>
+        <span className="benefit-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path d="M12 2 4 5v6c0 5.6 3.8 9.8 8 11 4.2-1.2 8-5.4 8-11V5l-8-3Z" />
+            <path d="m9.5 11.8 1.8 1.8 3.2-3.3" />
+          </svg>
+        </span>
         <p><strong>Reliable, expert advice</strong> you can trust</p>
       </div>
       <div className="benefit-item reveal">
-        <span className="benefit-icon" aria-hidden="true">💡</span>
+        <span className="benefit-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img">
+            <path d="M12 3a6.5 6.5 0 0 0-4.7 11 3.7 3.7 0 0 1 1.1 2.6h7.2a3.7 3.7 0 0 1 1.1-2.6A6.5 6.5 0 0 0 12 3Z" />
+            <path d="M9.5 19h5M10 21h4" />
+          </svg>
+        </span>
         <p><strong>A proactive approach</strong> that saves you time and money</p>
       </div>
 

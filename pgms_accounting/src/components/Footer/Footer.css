@@ -1,7 +1,7 @@
 .site-footer {
   margin-top: 2.5rem;
-  background: linear-gradient(155deg, #005d91, #0098da);
-  color: #eef8ff;
+  background: linear-gradient(155deg, #002c48, #004a74);
+  color: #f0f7ff;
 }
 
 .footer-grid {
@@ -18,18 +18,24 @@
   margin-bottom: 0.7rem;
 }
 
+.site-footer p {
+  color: #e8f3ff;
+}
+
 .footer-links {
   display: grid;
   gap: 0.4rem;
 }
 
 .footer-links a {
-  color: #f4fbff;
+  color: #eaf4ff;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .footer-links a:hover {
   color: #ffffff;
+  text-decoration: underline;
 }
 
 .footer-bottom {
@@ -40,7 +46,7 @@
 
 .footer-bottom p {
   margin: 0;
-  color: #f4fbff;
+  color: #eaf4ff;
   font-size: 0.92rem;
 }
 
