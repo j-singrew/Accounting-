@@ -49,9 +49,13 @@ const Blog = () => {
           {blogPosts.map(post => (
             <article key={post.id} className="blog-card">
               <div className="blog-card-image">
-                <div className="blog-placeholder-image">
-                  📄
-                </div>
+                {post.image ? (
+                  <img src={post.image} alt={post.title} />
+                ) : (
+                  <div className="blog-placeholder-image">
+                    📄
+                  </div>
+                )}
               </div>
 
               <div className="blog-card-content">
@@ -64,7 +68,7 @@ const Blog = () => {
                 <h3>{post.title}</h3>
                 <p>{post.excerpt}</p>
 
-                <Link to={`/blog/${post.slug}`} className="read-more-btn">
+                <Link to={`/Blog/${post.slug}`} className="read-more-btn">
                   Read More →
                 </Link>
               </div>
