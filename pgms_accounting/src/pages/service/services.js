@@ -1,7 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import Header from '../header/header';
 import Navbar from '../Navbar/Navbar';
+import './services.css';
 
 function Services() {
   return (
@@ -34,7 +36,7 @@ function Services() {
           <div className="service-detail-grid">
     
             <div className="service-detail-card">
-              <i className="service-detail-icon fas fa-file-invoice-dollar"></i> 
+              <span className="service-detail-icon" aria-hidden="true">📄</span>
               <h3>Tax Services</h3>
               <ul>
                 <li>Tax planning and strategy</li>
@@ -47,7 +49,7 @@ function Services() {
             </div>
 
             <div className="service-detail-card">
-              <i className="service-detail-icon fas fa-calculator"></i> 
+              <span className="service-detail-icon" aria-hidden="true">🧮</span>
               <h3>Accounting Services</h3>
               <ul>
                 <li>Financial statement preparation</li>
@@ -61,7 +63,7 @@ function Services() {
 
        
             <div className="service-detail-card">
-              <i className="service-detail-icon fas fa-project-diagram"></i> 
+              <span className="service-detail-icon" aria-hidden="true">📊</span>
               <h3>Management Support</h3>
               <ul>
                 <li>Budgeting and forecasting</li>
@@ -82,7 +84,7 @@ function Services() {
         <div className="container">
           <h2>Ready to Make Life Easier?</h2>
           <p>Let’s simplify your tax and accounting, so you can focus on growing your business.</p>
-          <a href="/Contact" className="btn">Contact Us Today</a>
+          <Link to="/Contact" className="btn">Contact Us Today</Link>
         </div>
       </section>
     </>

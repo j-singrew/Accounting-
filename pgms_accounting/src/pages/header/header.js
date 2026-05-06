@@ -1,34 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import headerImage from '../assets/pexels-leeloothefirst-6929024.jpg'; 
-
-const headerContainer = {
-  position: 'relative',
-  backgroundImage: `url(${headerImage})`,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  height: '300px',
-  overflow: 'hidden', 
-};
-
-const overlayStyle = {
-  position: 'absolute',
-  top: 0,
-  left: 0,
-  height: '100%',
-  width: '100%',
-  backgroundColor: 'rgba(255, 255, 255, 0.7)', 
-  zIndex: 1,
-};
-
-const contentStyle = (visible) => ({
-  position: 'relative',
-  zIndex: 2,
-  color: '#FF6600',       // Changed text color here
-  textAlign: 'center',
-  transform: visible ? 'translateY(0)' : 'translateY(-100%)',
-  transition: 'transform 0.8s ease-out',
-  paddingTop: '100px',
-});
+import './header.css';
 
 function Header() {
   const [visible, setVisible] = useState(false);
@@ -38,11 +10,11 @@ function Header() {
   }, []);
 
   return (
-    <header style={headerContainer}>
-      <div style={overlayStyle}></div>
-      <div style={contentStyle(visible)}>
+    <header className="pgms-header" style={{ backgroundImage: `url(${headerImage})` }}>
+      <div className="overlay"></div>
+      <div className={`header-content ${visible ? 'visible' : ''}`}>
         <h1>Making life easier for you</h1>
-        <h3>~PGMS Accountants~</h3>
+        <h3>Trusted tax and accounting support</h3>
       </div>
     </header>
   );

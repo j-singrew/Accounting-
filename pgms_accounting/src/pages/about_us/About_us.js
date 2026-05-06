@@ -1,7 +1,9 @@
 import Header from '../header/header';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import  Navbar from '../Navbar/Navbar'
+import './About_us.css';
 
 
 
@@ -37,32 +39,32 @@ function Aboutus(){
 
           <div className="about-values-grid">
             <div className="value-item">
-              <i className="value-icon fas fa-user-tie"></i> {/* Personalized Approach */}
+              <span className="value-icon" aria-hidden="true">👔</span>
               <h3>Personalized Approach</h3>
               <p>We take an incredibly individualized approach, grasping the intricacies of your business and financial goals.</p>
             </div>
             <div className="value-item">
-              <i className="value-icon fas fa-handshake"></i> {/* Trusted Partner */}
+              <span className="value-icon" aria-hidden="true">🤝</span>
               <h3>Trusted Partnership</h3>
               <p>We strive to become your trusted partner on your financial journey, not just another service provider.</p>
             </div>
             <div className="value-item">
-              <i className="value-icon fas fa-cogs"></i> {/* Comprehensive Services */}
+              <span className="value-icon" aria-hidden="true">⚙️</span>
               <h3>Comprehensive Services</h3>
               <p>Access a full range of tax and accounting services designed specifically for your unique requirements.</p>
             </div>
             <div className="value-item">
-              <i className="value-icon fas fa-users-cog"></i> {/* Dedicated Client Focus */}
+              <span className="value-icon" aria-hidden="true">🎯</span>
               <h3>Dedicated Client Focus</h3>
               <p>We intentionally limit clients to provide the highest level of attention and quality service.</p>
             </div>
             <div className="value-item">
-              <i className="value-icon fas fa-chart-line"></i> {/* Industry Leadership */}
+              <span className="value-icon" aria-hidden="true">📈</span>
               <h3>Industry Leadership</h3>
               <p>We stay at the forefront of trends and regulations, providing accurate, strategic advice.</p>
             </div>
             <div className="value-item">
-              <i className="value-icon fas fa-comments"></i> {/* Exceptional Service */}
+              <span className="value-icon" aria-hidden="true">💬</span>
               <h3>Exceptional Client Service</h3>
               <p>Accessibility, responsiveness, and reliability are the cornerstones of our successful partnership.</p>
             </div>
@@ -80,7 +82,7 @@ function Aboutus(){
         <div className="container">
           <h2>Ready to Make Life Easier?</h2>
           <p>Let’s simplify your tax and accounting, so you can focus on growing your business.</p>
-          <a href="/Contact" className="btn">Contact Us Today</a>
+          <Link to="/Contact" className="btn">Contact Us Today</Link>
         </div>
       </section>
 

@@ -1,18 +1,21 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import Header from '../header/header';
 import Navbar from '../Navbar/Navbar';
 import './contact.css';
 
 
 function Contact() {
+    const [formStatus, setFormStatus] = React.useState('');
     const handleSubmit = (event) => {
     event.preventDefault();
-    alert('Form submission is not yet implemented. Check console for details.');
     // In a real application, you'd send this data to a server
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData.entries());
     console.log('Form Submitted:', data);
+    setFormStatus('Thanks, your message has been captured. We will contact you soon.');
+    event.target.reset();
     // Example: fetch('/api/contact', { method: 'POST', body: JSON.stringify(data) });
   };
   return (
@@ -43,13 +46,13 @@ function Contact() {
           {/* This div will now be the single card containing all contact info */}
           <div className="contact-card-main">
             <div className="contact-item">
-              <i className="contact-icon fas fa-map-marker-alt"></i>
+              <span className="contact-icon" aria-hidden="true">📍</span>
               <h3>Address</h3>
               <p>28 Harry Mann Square, 112 York St, George, 6530</p>
             </div>
 
             <div className="contact-item">
-              <i className="contact-icon fas fa-clock"></i>
+              <span className="contact-icon" aria-hidden="true">🕒</span>
               <h3>Hours</h3>
               <ul>
                 <li>Open 8h30 - 17h00 Monday - Thursday</li>
@@ -59,7 +62,7 @@ function Contact() {
             </div>
 
             <div className="contact-item">
-              <i className="contact-icon fas fa-phone-alt"></i>
+              <span className="contact-icon" aria-hidden="true">📞</span>
               <h3>Office</h3>
               <p>068 251 2998</p>
             </div>
@@ -129,7 +132,16 @@ function Contact() {
               <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
             </div>
             <button type="submit" className="btn submit-btn">Send Message</button>
+            {formStatus && <p className="form-feedback">{formStatus}</p>}
           </form>
+        </div>
+      </section>
+
+      <section className="cta">
+        <div className="container">
+          <h2>Prefer a direct call?</h2>
+          <p>Reach us during office hours for immediate assistance.</p>
+          <Link to="/Service" className="btn">View Services</Link>
         </div>
       </section>
 

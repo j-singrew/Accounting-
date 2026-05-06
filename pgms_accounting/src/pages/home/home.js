@@ -2,6 +2,7 @@ import "./home.css"
 import Header from '../header/header';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import  Navbar from '../Navbar/Navbar'
 import CountUp from 'react-countup';
 
@@ -24,7 +25,7 @@ function Home(){
         <meta property="og:url" content="https://www.edenbiz.info/" />
         <meta property="og:type" content="website" />
       </Helmet>
-      <div className="intro-slide">
+      <div className="intro-slide container">
   <h1>Making Life Easier for Your Business</h1>
   <p>Partnering with you to simplify tax, accounting, and management — so you can focus on growth.</p>
 </div>
@@ -95,24 +96,20 @@ function Home(){
   <div className="container">
     <h2>Why Choose PGMS?</h2>
     <p>We’re not just accountants — we’re your long-term partners in success. Since 2006, PGMS has helped entrepreneurs thrive by offering:</p>
-    {/* New: Flexbox container for benefit items */}
     <div className="benefits-grid">
-      {/* Benefit Item 1: Personalized Service */}
       <div className="benefit-item">
-        <i className="benefit-icon fas fa-handshake"></i> {/* Example Icon: Handshake */}
+        <span className="benefit-icon" aria-hidden="true">🤝</span>
         <p><strong>Personalized service</strong> tailored to your business</p>
       </div>
-      {/* Benefit Item 2: Reliable Advice */}
       <div className="benefit-item">
-        <i className="benefit-icon fas fa-shield-alt"></i> {/* Example Icon: Shield */}
+        <span className="benefit-icon" aria-hidden="true">🛡️</span>
         <p><strong>Reliable, expert advice</strong> you can trust</p>
       </div>
-      {/* Benefit Item 3: Proactive Approach */}
       <div className="benefit-item">
-        <i className="benefit-icon fas fa-lightbulb"></i> {/* Example Icon: Lightbulb */}
+        <span className="benefit-icon" aria-hidden="true">💡</span>
         <p><strong>A proactive approach</strong> that saves you time and money</p>
       </div>
-      
+
     </div>
 
     <p>Imagine having a team of dedicated professionals by your side, navigating the intricate world of taxes. Our tax services go beyond mere compliance – we strategically plan and optimize your tax position to help you minimize liabilities and maximize savings. With us, tax season becomes an opportunity for growth rather than a burden.</p>
@@ -128,7 +125,7 @@ function Home(){
 <section className="cta">
   <h2>Ready to Make Life Easier?</h2>
   <p>Let’s simplify your tax and accounting, so you can focus on growing your business.</p>
-  <a href="/Contact" className="btn">Contact Us Today</a>
+  <Link to="/Contact" className="btn">Contact Us Today</Link>
 </section>
 
         </>
