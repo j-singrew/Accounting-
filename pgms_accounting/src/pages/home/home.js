@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import  Navbar from '../Navbar/Navbar'
 import CountUp from 'react-countup';
+import Footer from '../../components/Footer/Footer';
 
 
 function Home(){
@@ -122,11 +123,45 @@ function Home(){
   </div>
 </section>
 
+<section className="trust-strip">
+  <div className="container trust-strip-inner">
+    <span>Registered Tax Practitioners</span>
+    <span>17+ Years of Experience</span>
+    <span>Tailored SME Advisory</span>
+    <span>Local Team in George</span>
+  </div>
+</section>
+
 <section className="cta">
   <h2>Ready to Make Life Easier?</h2>
   <p>Let’s simplify your tax and accounting, so you can focus on growing your business.</p>
   <Link to="/Contact" className="btn">Contact Us Today</Link>
 </section>
+
+<section className="process-section">
+  <div className="container">
+    <h2>How We Work With You</h2>
+    <div className="process-grid">
+      <article className="process-card">
+        <span className="process-step">01</span>
+        <h3>Discovery Call</h3>
+        <p>We map your challenges, timelines, and compliance priorities.</p>
+      </article>
+      <article className="process-card">
+        <span className="process-step">02</span>
+        <h3>Custom Plan</h3>
+        <p>We build a practical accounting and tax action plan for your business.</p>
+      </article>
+      <article className="process-card">
+        <span className="process-step">03</span>
+        <h3>Execution & Support</h3>
+        <p>Our team handles the detail while keeping you informed and in control.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<Footer />
 
         </>
     )

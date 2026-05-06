@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from '../header/header';
 import Navbar from '../Navbar/Navbar';
 import './services.css';
+import Footer from '../../components/Footer/Footer';
 
 function Services() {
   return (
@@ -87,6 +88,7 @@ function Services() {
           <Link to="/Contact" className="btn">Contact Us Today</Link>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import  Navbar from '../Navbar/Navbar'
 import './About_us.css';
+import Footer from '../../components/Footer/Footer';
 
 
 
@@ -85,6 +86,8 @@ function Aboutus(){
           <Link to="/Contact" className="btn">Contact Us Today</Link>
         </div>
       </section>
+
+      <Footer />
 
 
         </>

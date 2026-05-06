@@ -105,10 +105,60 @@
   margin-top: 2rem;
 }
 
+.trust-strip {
+  padding: 1rem 0;
+  background: #0f2f55;
+}
+
+.trust-strip-inner {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.trust-strip-inner span {
+  color: #e8f2fe;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.process-section {
+  padding-top: 1rem;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.process-card {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 14px;
+  padding: 1.2rem;
+}
+
+.process-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #e5f0fd;
+  color: #155a9a;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
 @media (max-width: 960px) {
   .experience-stats,
   .services-grid,
-  .benefits-grid {
+  .benefits-grid,
+  .trust-strip-inner,
+  .process-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -120,7 +170,9 @@
 
   .experience-stats,
   .services-grid,
-  .benefits-grid {
+  .benefits-grid,
+  .trust-strip-inner,
+  .process-grid {
     grid-template-columns: 1fr;
   }
 }

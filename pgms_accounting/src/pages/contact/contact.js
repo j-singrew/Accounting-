@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from '../header/header';
 import Navbar from '../Navbar/Navbar';
 import './contact.css';
+import Footer from '../../components/Footer/Footer';
 
 
 function Contact() {
@@ -41,7 +42,7 @@ function Contact() {
       <section className="contact-section">
         <div className="container">
           <h2>Get in Touch</h2>
-          <p>You will find the latest information about our company here...</p>
+          <p>Speak to our team about tax, accounting, payroll, and business support tailored to your needs.</p>
 
           {/* This div will now be the single card containing all contact info */}
           <div className="contact-card-main">
@@ -94,7 +95,7 @@ function Contact() {
 
   {/* Florence De Abreu Card */}
   <div className="person-card">
-    <img src="/images/theo.png" alt="Theo Burrows" className="person-image" /> {/* Placeholder image */}
+    <img src="/images/theo.png" alt="Florence De Abreu" className="person-image" />
     <h3>Florence De Abreu</h3>
     <p className="title">Administrator</p>
     <p className="contact-detail"><strong>Contact:</strong> 068 251 2998</p>
@@ -144,6 +145,8 @@ function Contact() {
           <Link to="/Service" className="btn">View Services</Link>
         </div>
       </section>
+
+      <Footer />
 
     </>
   );
