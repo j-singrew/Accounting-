@@ -1,62 +1,65 @@
-.whatsapp-fab {
-  position: fixed;
-  right: 20px;
-  bottom: 82px;
-  z-index: 35;
-  border-radius: 999px;
-  background: #20c55a;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 700;
-  padding: 0.72rem 1rem;
-  box-shadow: 0 12px 22px rgba(10, 70, 30, 0.32);
-  transition: transform 0.2s ease;
-}
-
-.whatsapp-fab:hover {
-  transform: translateY(-2px);
-}
-
 .sticky-cta-bar {
   position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  left: 12px;
+  right: 12px;
+  bottom: 10px;
   z-index: 34;
   display: flex;
   justify-content: center;
-  gap: 0.65rem;
-  padding: 0.65rem 1rem calc(0.65rem + env(safe-area-inset-bottom));
-  background: rgba(0, 93, 145, 0.94);
-  backdrop-filter: blur(8px);
+  gap: 0.5rem;
+  padding: 0.45rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(0, 93, 145, 0.78);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 24px rgba(0, 42, 72, 0.25);
 }
 
 .sticky-cta-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.65rem 1rem;
-  border-radius: 10px;
+  gap: 0.35rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 11px;
   background: linear-gradient(145deg, #f58634, #dc6f1f);
   color: #ffffff;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 0.93rem;
-  min-width: 170px;
+  font-weight: 600;
+  font-size: 0.86rem;
+  min-width: 124px;
+  letter-spacing: 0.01em;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.sticky-cta-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.03);
 }
 
 .sticky-cta-btn.secondary {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.94);
   color: #005d91;
+}
+
+.sticky-cta-btn.whatsapp {
+  background: linear-gradient(145deg, #24c25d, #179347);
 }
 
 @media (min-width: 1024px) {
   .sticky-cta-bar {
     left: auto;
-    right: 20px;
+    right: 16px;
     bottom: 18px;
-    border-radius: 16px;
+    border-radius: 14px;
     width: auto;
-    box-shadow: 0 12px 28px rgba(9, 31, 56, 0.32);
+    box-shadow: 0 12px 26px rgba(9, 31, 56, 0.3);
+  }
+}
+
+@media (max-width: 700px) {
+  .sticky-cta-btn {
+    min-width: 0;
+    flex: 1;
   }
 }
