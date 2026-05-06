@@ -38,6 +38,7 @@ function AppContent() {
         <Route path="/Service" element={<Services/>} />
         <Route path="/Contact" element={<Contact/>} />
         <Route path="/Blog" element={<Blog/>} />
+       <Route path="/Blog/:slug" element={<BlogPost />} />
       </Routes>
       <StickyCTA />
     </>
