@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Home from './pages/home/home';
 import Aboutus from './pages/about_us/About_us';
 import Services from './pages/service/services';
-import  Contact from  './pages/contact/contact';
+import Contact from './pages/contact/contact';
+import Blog from './pages/blog/blog';
+import BlogPost from './pages/blog/BlogPost';
 import StickyCTA from './components/StickyCTA/StickyCTA';
 
 function AppContent() {
@@ -35,6 +37,7 @@ function AppContent() {
         <Route path="/About" element={<Aboutus/>} />
         <Route path="/Service" element={<Services/>} />
         <Route path="/Contact" element={<Contact/>} />
+        <Route path="/Blog" element={<Blog/>} />
       </Routes>
       <StickyCTA />
     </>

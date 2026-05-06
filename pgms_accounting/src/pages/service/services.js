@@ -28,7 +28,7 @@ function Services() {
         <div className="container">
           <h2>Our Services</h2>
           <p>Making life easier for you!</p>
-          <p>At PGMS, we specialize in providing high-quality services in the following key areas:</p>
+          <p>At PGMS, we provide comprehensive accounting, tax, and management support services tailored to your business needs.</p>
         </div>
       </section>
 
@@ -46,7 +46,7 @@ function Services() {
                 <li>Tax advisory and consultation</li>
                 <li>Resolution of tax issues and disputes</li>
               </ul>
-              <p>Our experienced tax professionals stay up-to-date with the latest tax regulations and developments to ensure accurate and efficient tax planning and compliance for your organization. We work closely with you to optimize your tax position and minimize any potential risks or liabilities.</p>
+              <p>Our tax professionals ensure compliance with current regulations while optimizing your tax position and minimizing liabilities through strategic planning.</p>
             </div>
 
             <div className="service-detail-card reveal">
@@ -59,7 +59,7 @@ function Services() {
                 <li>Payroll processing and compliance</li>
                 <li>Financial analysis and reporting</li>
               </ul>
-              <p>Our dedicated accounting team takes care of your day-to-day financial operations, providing accurate and timely information to support your decision-making process. With our expertise in financial reporting and analysis, we help you gain valuable insights into your organization's financial health and performance.</p>
+              <p>Our accounting team handles all financial operations with precision, providing timely reporting and analysis to support informed business decisions.</p>
             </div>
 
        
@@ -73,11 +73,11 @@ function Services() {
                 <li>Key performance indicators (KPIs) tracking</li>
                 <li>Business process improvement</li>
               </ul>
-              <p>Our management support services assist you in effectively managing your organization's financial resources and optimizing its overall performance. We work closely with you to develop strategic plans, set achievable financial goals, and implement systems that enhance operational efficiency.</p>
+              <p>We provide strategic financial planning and management support to optimize performance, develop budgets, and improve operational efficiency.</p>
             </div>
           </div>
 
-          <p className="final-paragraph">At PGMS, we understand that every organization has unique requirements and challenges. Therefore, our services are tailored to meet your specific needs and goals. With our expertise in tax, accounting, and management support, we become your trusted partner in driving your organization's success.</p>
+          <p className="final-paragraph">Every organization is unique. Our tailored services address your specific challenges and goals, making us your trusted partner for business success.</p>
         </div>
       </section>
 

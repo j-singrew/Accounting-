@@ -50,6 +50,9 @@ function Contact() {
               <span className="contact-icon" aria-hidden="true">📍</span>
               <h3>Address</h3>
               <p>28 Harry Mann Square, 112 York St, George, 6530</p>
+              <div className="contact-highlight">
+                <span>📍 Located in the heart of George</span>
+              </div>
             </div>
 
             <div className="contact-item reveal">
@@ -60,12 +63,18 @@ function Contact() {
                 <li>Open 8h30 - 13h00 - Friday</li>
                 <li>Closed Weekends and Public Holidays</li>
               </ul>
+              <div className="contact-highlight">
+                <span> Flexible scheduling available</span>
+              </div>
             </div>
 
             <div className="contact-item reveal">
               <span className="contact-icon" aria-hidden="true">📞</span>
               <h3>Office</h3>
               <p>068 251 2998</p>
+              <div className="contact-highlight">
+                <span> Direct line to our experts</span>
+              </div>
             </div>
           </div>
         </div>
@@ -74,6 +83,7 @@ function Contact() {
 <section className="team-section reveal">
         <div className="container">
   <h2>Meet Our Team</h2>
+  <p>Our experienced professionals are here to provide personalized accounting and tax solutions for your business.</p>
 <div className="team-grid">
   {/* Melanie Burrows Card */}
   <div className="person-card reveal">
@@ -83,6 +93,9 @@ function Contact() {
     <p className="contact-detail"><strong>Contact:</strong> 081 561 0508</p>
     <p className="contact-detail"><strong>Email:</strong> pgms@edenbiz.info</p>
     <p className="contact-detail"><strong>Address:</strong> 112 York Street, George, 6530</p>
+    <div className="contact-highlight">
+      <span> 17+ Years Experience</span>
+    </div>
   </div>
               <div className="person-card reveal">
             <img src="/theo_burrows.png" alt="Florence De Abreu" className="person-image" />
@@ -91,6 +104,9 @@ function Contact() {
               <p className="contact-detail"><strong>Contact:</strong> 067 900 5232</p>
               <p className="contact-detail"><strong>Email:</strong> admin@edenbiz.info</p>
               <p className="contact-detail"><strong>Address:</strong> 112 York Street, George, 6530</p>
+              <div className="contact-highlight">
+                <span> Tax Specialist</span>
+              </div>
             </div> 
 
   {/* Florence De Abreu Card */}
@@ -101,6 +117,9 @@ function Contact() {
     <p className="contact-detail"><strong>Contact:</strong> 068 251 2998</p>
     <p className="contact-detail"><strong>Email:</strong> reception@edenbiz.info</p>
     <p className="contact-detail"><strong>Address:</strong> 112 York Street, George, 6530</p>
+    <div className="contact-highlight">
+      <span> Client Support</span>
+    </div>
   </div>
 
             {/* Theo Burrows Card */}
@@ -108,35 +127,7 @@ function Contact() {
         </div>
       </section>
 
-       <section className="contact-form-section reveal">
-        <div className="container">
-          <h2>Send Us a Message</h2>
-          <p>Have a question or need assistance? Fill out the form below and we'll get back to you shortly.</p>
-
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-row"> {/* New: Container for side-by-side inputs */}
-              <div className="form-group">
-                <label htmlFor="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Your Email</label>
-                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required />
-              </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="subject">Subject</label> {/* New: Subject field */}
-              <input type="text" id="subject" name="subject" placeholder="Inquiry about Tax Services" />
-            </div>
-            <div className="form-group">
-              <label htmlFor="message">Your Message</label>
-              <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
-            </div>
-            <button type="submit" className="btn submit-btn">Send Message</button>
-            {formStatus && <p className="form-feedback">{formStatus}</p>}
-          </form>
-        </div>
-      </section>
+      
 
       <section className="cta reveal">
         <div className="container">

@@ -28,6 +28,7 @@ function Navbar() {
         <NavLink to="/" end className="nav-link" onClick={closeMenu}>Home</NavLink>
         <NavLink to="/About" className="nav-link" onClick={closeMenu}>About us</NavLink>
         <NavLink to="/Service" className="nav-link" onClick={closeMenu}>Services</NavLink>
+        <NavLink to="/Blog" className="nav-link" onClick={closeMenu}>Blog</NavLink>
         <NavLink to="/Contact" className="nav-link" onClick={closeMenu}>Contact</NavLink>
       </nav>
     </header>

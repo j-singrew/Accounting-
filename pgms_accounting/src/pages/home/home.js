@@ -96,7 +96,7 @@ function Home(){
 <section className="why-us reveal">
   <div className="container">
     <h2>Why Choose PGMS?</h2>
-    <p>We’re not just accountants — we’re your long-term partners in success. Since 2006, PGMS has helped entrepreneurs thrive by offering:</p>
+    <p>Since 2006, PGMS has been a trusted partner for businesses in George, providing comprehensive accounting, tax, and management support services.</p>
     <div className="benefits-grid">
       <div className="benefit-item reveal">
         <span className="benefit-icon" aria-hidden="true">
@@ -128,13 +128,10 @@ function Home(){
 
     </div>
 
-    <p>Imagine having a team of dedicated professionals by your side, navigating the intricate world of taxes. Our tax services go beyond mere compliance – we strategically plan and optimize your tax position to help you minimize liabilities and maximize savings. With us, tax season becomes an opportunity for growth rather than a burden.</p>
-    <p>We are more than just number crunchers. Our accounting services offer a comprehensive suite of solutions to keep your financial operations in order. From precise bookkeeping and financial statement preparation to meticulous payroll processing and compliance, we ensure accuracy and timeliness in all aspects of your accounting needs. Let us transform your numbers into valuable insights that drive informed decision-making.</p>
-    <p>Success requires effective management, and that's where our expertise truly shines. Our management support services empower you to take control of your financial future. With our assistance in budgeting, forecasting, and cash flow management, you'll gain the confidence to make informed choices that lead to sustainable growth.</p>
-    <p>Together, we'll optimize your business processes and track key performance indicators, unlocking new levels of efficiency and profitability.</p>
-    <p>What truly sets us apart is our commitment to your success. We are passionate about making a difference in your organization, and we serve you with unwavering dedication. Our personalized approach ensures that we truly understand your goals and challenges, enabling us to provide solutions that align with your vision.</p>
-    <p>Join forces with PGMS Accountants and experience the power of collaboration and expertise. We are not just service providers – we become your trusted partners on your path to success. Let us simplify the complexities of tax, accounting, and management support, while you focus on driving your business to new heights.</p>
-    <p>Contact us today and embark on a transformative journey towards financial excellence. Together, we'll make your business thrive in today's competitive landscape.</p>
+    <p>Our tax services include strategic planning, compliance, and optimization to minimize liabilities and maximize savings. We transform tax season from a burden into an opportunity for growth.</p>
+    <p>Beyond traditional accounting, we provide comprehensive financial solutions including precise bookkeeping, payroll processing, and financial analysis to support informed decision-making.</p>
+    <p>Our management support encompasses budgeting, forecasting, and cash flow management, empowering you to achieve sustainable growth and operational efficiency.</p>
+    <p>Choose PGMS for personalized service, expert advice, and a proactive approach that prioritizes your business success.</p>
   </div>
 </section>
 
