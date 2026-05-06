@@ -24,7 +24,7 @@ function Services() {
         <meta property="og:type" content="website" />
       </Helmet>
 
-      <section className="services-intro">
+      <section className="services-intro reveal">
         <div className="container">
           <h2>Our Services</h2>
           <p>Making life easier for you!</p>
@@ -32,11 +32,11 @@ function Services() {
         </div>
       </section>
 
-      <section className="service-details">
+      <section className="service-details reveal">
         <div className="container">
           <div className="service-detail-grid">
     
-            <div className="service-detail-card">
+            <div className="service-detail-card reveal">
               <span className="service-detail-icon" aria-hidden="true">📄</span>
               <h3>Tax Services</h3>
               <ul>
@@ -49,7 +49,7 @@ function Services() {
               <p>Our experienced tax professionals stay up-to-date with the latest tax regulations and developments to ensure accurate and efficient tax planning and compliance for your organization. We work closely with you to optimize your tax position and minimize any potential risks or liabilities.</p>
             </div>
 
-            <div className="service-detail-card">
+            <div className="service-detail-card reveal">
               <span className="service-detail-icon" aria-hidden="true">🧮</span>
               <h3>Accounting Services</h3>
               <ul>
@@ -63,7 +63,7 @@ function Services() {
             </div>
 
        
-            <div className="service-detail-card">
+            <div className="service-detail-card reveal">
               <span className="service-detail-icon" aria-hidden="true">📊</span>
               <h3>Management Support</h3>
               <ul>
@@ -81,7 +81,7 @@ function Services() {
         </div>
       </section>
 
-      <section className="cta">
+      <section className="cta reveal">
         <div className="container">
           <h2>Ready to Make Life Easier?</h2>
           <p>Let’s simplify your tax and accounting, so you can focus on growing your business.</p>

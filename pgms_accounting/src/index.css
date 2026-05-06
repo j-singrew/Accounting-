@@ -1,10 +1,29 @@
+:root {
+  --bg: #f4faff;
+  --text: #1e3f5b;
+  --muted: #4f6f87;
+  --heading: #005d91;
+  --primary: #0098da;
+  --primary-dark: #007cb3;
+  --secondary: #f58634;
+  --secondary-dark: #dc6f1f;
+  --card: #ffffff;
+  --radius: 14px;
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
 body {
   margin: 0;
   font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f6f9fc;
-  color: #1d3552;
+  background: var(--bg);
+  color: var(--text);
 }
 
 * {
@@ -22,16 +41,28 @@ section {
 h2 {
   margin: 0 0 0.9rem;
   font-size: clamp(1.5rem, 3vw, 2rem);
-  color: #0f2f55;
+  color: var(--heading);
+  letter-spacing: -0.01em;
 }
 
 h3 {
   color: #183e66;
+  margin-top: 0;
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
 }
 
 p {
-  color: #46617f;
+  color: var(--muted);
   line-height: 1.68;
+  font-size: clamp(0.98rem, 1.7vw, 1.06rem);
+}
+
+h1 {
+  margin: 0 0 var(--space-3);
+  color: var(--heading);
+  font-size: clamp(2rem, 4.4vw, 3.25rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .container {
@@ -44,7 +75,7 @@ p {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background: linear-gradient(145deg, #2f80d0, #2365a7);
+  background: linear-gradient(145deg, var(--secondary), var(--secondary-dark));
   color: #ffffff;
   padding: 0.7rem 1.2rem;
   font-weight: 600;
@@ -54,11 +85,11 @@ p {
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(47, 128, 208, 0.3);
+  box-shadow: 0 8px 16px rgba(245, 134, 52, 0.35);
 }
 
 .cta {
-  background: linear-gradient(145deg, #0f2f55, #204e81);
+  background: linear-gradient(145deg, var(--primary-dark), var(--primary));
   color: #ffffff;
   text-align: center;
   border-radius: 16px;
@@ -71,8 +102,23 @@ p {
   color: #ffffff;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 640px) {
   section {
     padding: 2.2rem 0;
+  }
+
+  body {
+    padding-bottom: 72px;
   }
 }

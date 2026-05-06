@@ -26,12 +26,12 @@ function Home(){
         <meta property="og:url" content="https://www.edenbiz.info/" />
         <meta property="og:type" content="website" />
       </Helmet>
-      <div className="intro-slide container">
+      <div className="intro-slide container reveal">
   <h1>Making Life Easier for Your Business</h1>
   <p>Partnering with you to simplify tax, accounting, and management — so you can focus on growth.</p>
 </div>
 
-<section className="experience-section">
+<section className="experience-section reveal">
   <div className="experience-content">
   <h2>17 Years of Trusted Accounting Expertise</h2>
   <p>
@@ -39,19 +39,19 @@ function Home(){
     Our experienced team is committed to providing solutions tailored to your unique needs.
   </p>
   <div className="experience-stats">
-    <div className="stat">
+    <div className="stat reveal">
       <span className="number">
         <CountUp end={17} duration={2} enableScrollSpy scrollSpyOnce />
       </span>
       <span className="label">Years of Experience</span>
     </div>
-    <div className="stat">
+    <div className="stat reveal">
       <span className="number">
         <CountUp end={500} duration={2.5} suffix="+" enableScrollSpy scrollSpyOnce />
       </span>
       <span className="label">Satisfied Clients</span>
     </div>
-    <div className="stat">
+    <div className="stat reveal">
       <span className="number">
         <CountUp end={1000} duration={3} suffix="+" enableScrollSpy scrollSpyOnce />
       </span>
@@ -60,12 +60,12 @@ function Home(){
   </div>
 </div>
 </section>
-<section className="services">
+<section className="services reveal">
   <div className="container">
     <h2>What We Do</h2>
     <div className="services-grid">
       {/* Service Card 1: Tax Services - NOW USING AN IMAGE */}
-      <div className="service-card">
+      <div className="service-card reveal">
         {/* Corrected path: Removed project folder and public folder from src */}
 
         <img src="/budget_new .png" alt="Tax Services Icon" className="service-card-icon" />
@@ -74,7 +74,7 @@ function Home(){
       </div>
 
       {/* Service Card 2: Accounting - NOW USING AN IMAGE */}
-      <div className="service-card">
+      <div className="service-card reveal">
         {/* Corrected path: Removed project folder and public folder from src */}
         <img src="/accounting.png" alt="Accounting Icon" className="service-card-icon" />
         <h3>Accounting</h3>
@@ -82,7 +82,7 @@ function Home(){
       </div>
 
       {/* Service Card 3: Management Support - NOW USING AN IMAGE */}
-      <div className="service-card">
+      <div className="service-card reveal">
         {/* Corrected path: Removed project folder and public folder from src */}
         <img src="/presentation.png" alt="Management Support Icon" className="service-card-icon" />
         <h3>Management Support</h3>
@@ -93,20 +93,20 @@ function Home(){
 </section>
 
 
-<section className="why-us">
+<section className="why-us reveal">
   <div className="container">
     <h2>Why Choose PGMS?</h2>
     <p>We’re not just accountants — we’re your long-term partners in success. Since 2006, PGMS has helped entrepreneurs thrive by offering:</p>
     <div className="benefits-grid">
-      <div className="benefit-item">
+      <div className="benefit-item reveal">
         <span className="benefit-icon" aria-hidden="true">🤝</span>
         <p><strong>Personalized service</strong> tailored to your business</p>
       </div>
-      <div className="benefit-item">
+      <div className="benefit-item reveal">
         <span className="benefit-icon" aria-hidden="true">🛡️</span>
         <p><strong>Reliable, expert advice</strong> you can trust</p>
       </div>
-      <div className="benefit-item">
+      <div className="benefit-item reveal">
         <span className="benefit-icon" aria-hidden="true">💡</span>
         <p><strong>A proactive approach</strong> that saves you time and money</p>
       </div>
@@ -123,7 +123,7 @@ function Home(){
   </div>
 </section>
 
-<section className="trust-strip">
+<section className="trust-strip reveal">
   <div className="container trust-strip-inner">
     <span>Registered Tax Practitioners</span>
     <span>17+ Years of Experience</span>
@@ -132,27 +132,27 @@ function Home(){
   </div>
 </section>
 
-<section className="cta">
+<section className="cta reveal">
   <h2>Ready to Make Life Easier?</h2>
   <p>Let’s simplify your tax and accounting, so you can focus on growing your business.</p>
   <Link to="/Contact" className="btn">Contact Us Today</Link>
 </section>
 
-<section className="process-section">
+<section className="process-section reveal">
   <div className="container">
     <h2>How We Work With You</h2>
     <div className="process-grid">
-      <article className="process-card">
+      <article className="process-card reveal">
         <span className="process-step">01</span>
         <h3>Discovery Call</h3>
         <p>We map your challenges, timelines, and compliance priorities.</p>
       </article>
-      <article className="process-card">
+      <article className="process-card reveal">
         <span className="process-step">02</span>
         <h3>Custom Plan</h3>
         <p>We build a practical accounting and tax action plan for your business.</p>
       </article>
-      <article className="process-card">
+      <article className="process-card reveal">
         <span className="process-step">03</span>
         <h3>Execution & Support</h3>
         <p>Our team handles the detail while keeping you informed and in control.</p>

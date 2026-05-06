@@ -39,20 +39,20 @@ function Contact() {
         <meta property="og:type" content="website" />
       </Helmet>
 
-      <section className="contact-section">
+      <section className="contact-section reveal">
         <div className="container">
           <h2>Get in Touch</h2>
           <p>Speak to our team about tax, accounting, payroll, and business support tailored to your needs.</p>
 
           {/* This div will now be the single card containing all contact info */}
           <div className="contact-card-main">
-            <div className="contact-item">
+            <div className="contact-item reveal">
               <span className="contact-icon" aria-hidden="true">📍</span>
               <h3>Address</h3>
               <p>28 Harry Mann Square, 112 York St, George, 6530</p>
             </div>
 
-            <div className="contact-item">
+            <div className="contact-item reveal">
               <span className="contact-icon" aria-hidden="true">🕒</span>
               <h3>Hours</h3>
               <ul>
@@ -62,7 +62,7 @@ function Contact() {
               </ul>
             </div>
 
-            <div className="contact-item">
+            <div className="contact-item reveal">
               <span className="contact-icon" aria-hidden="true">📞</span>
               <h3>Office</h3>
               <p>068 251 2998</p>
@@ -71,12 +71,12 @@ function Contact() {
         </div>
       </section>
 
-<section className="team-section">
+<section className="team-section reveal">
         <div className="container">
   <h2>Meet Our Team</h2>
 <div className="team-grid">
   {/* Melanie Burrows Card */}
-  <div className="person-card">
+  <div className="person-card reveal">
     <img src="/Malny_burrows.png" alt="Melanie Burrows" className="person-image" />
     <h3>Melanie Burrows</h3>
     <p className="title">Managing Member</p>
@@ -84,7 +84,7 @@ function Contact() {
     <p className="contact-detail"><strong>Email:</strong> pgms@edenbiz.info</p>
     <p className="contact-detail"><strong>Address:</strong> 112 York Street, George, 6530</p>
   </div>
-              <div className="person-card">
+              <div className="person-card reveal">
             <img src="/theo_burrows.png" alt="Florence De Abreu" className="person-image" />
               <h3>Theo Burrows</h3>
               <p className="title">Tax Practitioner</p>
@@ -94,7 +94,7 @@ function Contact() {
             </div> 
 
   {/* Florence De Abreu Card */}
-  <div className="person-card">
+  <div className="person-card reveal">
     <img src="/images/theo.png" alt="Florence De Abreu" className="person-image" />
     <h3>Florence De Abreu</h3>
     <p className="title">Administrator</p>
@@ -108,7 +108,7 @@ function Contact() {
         </div>
       </section>
 
-       <section className="contact-form-section">
+       <section className="contact-form-section reveal">
         <div className="container">
           <h2>Send Us a Message</h2>
           <p>Have a question or need assistance? Fill out the form below and we'll get back to you shortly.</p>
@@ -138,7 +138,7 @@ function Contact() {
         </div>
       </section>
 
-      <section className="cta">
+      <section className="cta reveal">
         <div className="container">
           <h2>Prefer a direct call?</h2>
           <p>Reach us during office hours for immediate assistance.</p>

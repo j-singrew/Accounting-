@@ -25,7 +25,7 @@ function Aboutus(){
                 <meta property="og:type" content="website" />
               </Helmet>
           <Navbar></Navbar>
-        <Header></Header><section className="about-intro">
+        <Header></Header><section className="about-intro reveal">
         <div className="container">
           <h2>About Us</h2>
           <p>Making life easier for you</p>
@@ -33,38 +33,38 @@ function Aboutus(){
         </div>
       </section>
 
-      <section className="our-values">
+      <section className="our-values reveal">
         <div className="container">
           <h2>Our Core Values</h2>
           <p>At PGMS Accountants, we understand that you are one of a kind, with unique needs and aspirations. That's why we take an incredibly individualised approach to our services, ensuring that we truly grasp the intricacies of your business and financial goals. We don't just want to be another service provider; we strive to become your trusted partner on your financial journey.</p>
 
           <div className="about-values-grid">
-            <div className="value-item">
+            <div className="value-item reveal">
               <span className="value-icon" aria-hidden="true">👔</span>
               <h3>Personalized Approach</h3>
               <p>We take an incredibly individualized approach, grasping the intricacies of your business and financial goals.</p>
             </div>
-            <div className="value-item">
+            <div className="value-item reveal">
               <span className="value-icon" aria-hidden="true">🤝</span>
               <h3>Trusted Partnership</h3>
               <p>We strive to become your trusted partner on your financial journey, not just another service provider.</p>
             </div>
-            <div className="value-item">
+            <div className="value-item reveal">
               <span className="value-icon" aria-hidden="true">⚙️</span>
               <h3>Comprehensive Services</h3>
               <p>Access a full range of tax and accounting services designed specifically for your unique requirements.</p>
             </div>
-            <div className="value-item">
+            <div className="value-item reveal">
               <span className="value-icon" aria-hidden="true">🎯</span>
               <h3>Dedicated Client Focus</h3>
               <p>We intentionally limit clients to provide the highest level of attention and quality service.</p>
             </div>
-            <div className="value-item">
+            <div className="value-item reveal">
               <span className="value-icon" aria-hidden="true">📈</span>
               <h3>Industry Leadership</h3>
               <p>We stay at the forefront of trends and regulations, providing accurate, strategic advice.</p>
             </div>
-            <div className="value-item">
+            <div className="value-item reveal">
               <span className="value-icon" aria-hidden="true">💬</span>
               <h3>Exceptional Client Service</h3>
               <p>Accessibility, responsiveness, and reliability are the cornerstones of our successful partnership.</p>
@@ -79,7 +79,7 @@ function Aboutus(){
         </div>
       </section>
 
-      <section className="cta">
+      <section className="cta reveal">
         <div className="container">
           <h2>Ready to Make Life Easier?</h2>
           <p>Let’s simplify your tax and accounting, so you can focus on growing your business.</p>
