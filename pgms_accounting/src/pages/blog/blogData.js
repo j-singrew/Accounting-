@@ -6,12 +6,9 @@ export const blogPosts = [
     date: "2025-05-03",
     readTime: "6 min read",
     category: "Financial Planning",
-    image: "/blog/Hidden in plane sight.png",
+    image: "/blog/article-1.jpg",
     slug: "informal-economy-illicit-flows",
-    author: {
-      name: "Thelonious Burrows",
-      image: "/blog/theo.png"
-    },
+    author: "Thelonious Burrows",
     content: `
 <h2>Hidden in Plain Sight: The Untold Story of South Africa’s Informal Economy and Illicit Money Flows</h2>
 
@@ -100,12 +97,9 @@ export const blogPosts = [
     date: "2026-03-04",
     readTime: "7 min read",
     category: "Tax Planning",
-    image: "/blog/traffic.png",
+    image: "/blog/article-2.jpg",
     slug: "contrarian-thinking-tax-traffic",
-    author: {
-      name: "Thelonious Burrows",
-      image: "/blog/theo.png"
-    },
+    author: "Thelonious Burrows",
     content: `
 <h2>What Traffic Can Teach Tax Practitioners About Contrarian Thinking</h2>
 
@@ -173,12 +167,9 @@ export const blogPosts = [
     date: "2026-02-08",
     readTime: "6 min read",
     category: "Tax Planning",
-    image: "/blog/fear.png",
+    image: "/blog/article-3.jpg",
     slug: "fear-tax-ecosystem",
-    author: {
-      name: "Thelonious Burrows",
-      image: "/blog/theo.png"
-    },
+    author: "Thelonious Burrows",
     content: `
 <h2>When Fear Shapes the Tax Ecosystem</h2>
 
@@ -217,13 +208,9 @@ export const blogPosts = [
     date: "2025-12-31",
     readTime: "8 min read",
     category: "Financial Planning",
-    image: "/blog/sa.png",
+    image: "/blog/article-4.jpg",
     slug: "ghost-generation-south-africa",
-
-    author: {
-      name: "Thelonious Burrows",
-      image: "/blog/theo.png"
-    },
+    author: "Thelonious Burrows",
     content: `
 <h2>South Africa is Spending R188 Billion to Create a Ghost Generation</h2>
 
@@ -252,12 +239,9 @@ export const blogPosts = [
     date: "2025-10-20",
     readTime: "7 min read",
     category: "Tax Planning",
-    image: "/blog/sars.png",
+    image: "/blog/article-5.jpg",
     slug: "sars-administrative-law",
-    author: {
-      name: "Thelonious Burrows",
-      image:  "/blog/theo.png"
-    },
+    author: "Thelonious Burrows",
     content: `
 <h2>Fairness, Lawfulness and Rationality in SARS Administration</h2>
 
@@ -292,12 +276,9 @@ export const blogPosts = [
     date: "2025-10-11",
     readTime: "9 min read",
     category: "Financial Planning",
-    image: "/blog/generation.png",
+    image: "/blog/article-6.jpg",
     slug: "generation-exile-south-africa",
-    author: {
-      name: "Thelonious Burrows",
-      image:  "/blog/theo.png"
-    },
+    author: "Thelonious Burrows",
     content: `
 <h2>Generation Exile: How South Africa Is Manufacturing Wasted Talent</h2>
 
