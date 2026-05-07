@@ -49,7 +49,7 @@ function AppContent() {
 
 function App() {
   return (
-    <Router basename="/Accounting">
+<Router basename="/Accounting-">
       <ScrollToTop />
       <AppContent />
       <ScrollTopButton />
