@@ -41,7 +41,7 @@ function BlogPost() {
         <div className="container">
           {blogPost.image && (
             <div className="blog-post-hero-image">
-              <img src={blogPost.image} alt={blogPost.title} />
+              <img src={process.env.PUBLIC_URL + blogPost.image} alt={blogPost.title} />
             </div>
           )}
 
@@ -62,7 +62,7 @@ function BlogPost() {
           <div className="blog-author">
             <p>By {blogPost.author.name}</p>
   <img
-    src={blogPost.author.image}
+   src={process.env.PUBLIC_URL + blogPost.author.image} 
     alt={blogPost.author.name}
     className="author-avatar"
   />
