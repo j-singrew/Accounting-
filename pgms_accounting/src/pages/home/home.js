@@ -68,7 +68,7 @@ function Home(){
       <div className="service-card reveal">
         {/* Corrected path: Removed project folder and public folder from src */}
 
-        <img src="/budget_new .png" alt="Tax Services Icon" className="service-card-icon" />
+         <img src={process.env.PUBLIC_URL + "/budget_new .png"} alt="Tax Services Icon" className="service-card-icon" />
         <h3>Tax Services</h3>
         <p>Strategic planning to reduce liabilities and keep you compliant.</p>
       </div>
@@ -76,7 +76,7 @@ function Home(){
       {/* Service Card 2: Accounting - NOW USING AN IMAGE */}
       <div className="service-card reveal">
         {/* Corrected path: Removed project folder and public folder from src */}
-        <img src="/accounting.png" alt="Accounting Icon" className="service-card-icon" />
+        <img src={process.env.PUBLIC_URL + "/accounting.png"} alt="Accounting Icon" className="service-card-icon" />
         <h3>Accounting</h3>
         <p>Accurate books, payroll, and financial reports that support growth.</p>
       </div>
@@ -84,7 +84,7 @@ function Home(){
       {/* Service Card 3: Management Support - NOW USING AN IMAGE */}
       <div className="service-card reveal">
         {/* Corrected path: Removed project folder and public folder from src */}
-        <img src="/presentation.png" alt="Management Support Icon" className="service-card-icon" />
+        <img src={process.env.PUBLIC_URL + "/presentation.png"} alt="Management Support Icon" className="service-card-icon" />
         <h3>Management Support</h3>
         <p>Cash flow management, budgeting, and forecasting tailored to you.</p>
       </div>

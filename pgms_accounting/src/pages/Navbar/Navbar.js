@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <header className="navbar-container">
       <NavLink to="/" className="brand" onClick={closeMenu}>
-        <img src="/PGMS Main.png" alt="PGMS Accounting Services Logo" className="logo" />
+        <img src={process.env.PUBLIC_URL +"/PGMS Main.png"} alt="PGMS Accounting Services Logo" className="logo" />
         <h1>PGMS Accountants</h1>
       </NavLink>
       <button

@@ -50,7 +50,7 @@ const Blog = () => {
             <article key={post.id} className="blog-card">
               <div className="blog-card-image">
                 {post.image ? (
-                  <img src={post.image} alt={post.title} />
+                  <img src={process.env.PUBLIC_URL + post.image} alt={post.title} />
                 ) : (
                   <div className="blog-placeholder-image">
                     📄

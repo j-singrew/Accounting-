@@ -120,7 +120,7 @@ function Contact() {
           <div className="team-grid">
 
             <div className="person-card reveal">
-              <img src="/Malny_burrows.png" alt="Melanie Burrows" className="person-image" />
+              <img src={process.env.PUBLIC_URL + "/Malny_burrows.png"} alt="Melanie Burrows" className="person-image" />
               <h3>Melanie Burrows</h3>
               <p className="title">Managing Member</p>
               <p className="contact-detail"><strong>Contact:</strong> 081 561 0508</p>
@@ -132,7 +132,7 @@ function Contact() {
             </div>
 
             <div className="person-card reveal">
-              <img src="/theo_burrows.png" alt="Theo Burrows" className="person-image" />
+              <img src={process.env.PUBLIC_URL + "/theo_burrows.png"} alt="Theo Burrows" className="person-image" />
               <h3>Theo Burrows</h3>
               <p className="title">Tax Practitioner</p>
               <p className="contact-detail"><strong>Contact:</strong> 067 900 5232</p>
@@ -144,7 +144,8 @@ function Contact() {
             </div>
 
             <div className="person-card reveal">
-              <img src="/images/theo.png" alt="Florence De Abreu" className="person-image" />
+              
+              <img src={process.env.PUBLIC_URL + "/images/theo.png"} alt="Florence De Abreu" className="person-image" />
               <h3>Florence De Abreu</h3>
               <p className="title">Administrator</p>
               <p className="contact-detail"><strong>Contact:</strong> 068 251 2998</p>
