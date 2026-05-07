@@ -312,3 +312,18 @@
     font-size: 1.8rem;
   }
 }
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto 0.8rem auto;
+
+  width: 56px;
+  height: 56px;
+
+  border-radius: 14px;
+
+  background: rgba(15, 47, 85, 0.06);
+  color: #0f2f55;
+}

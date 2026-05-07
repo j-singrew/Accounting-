@@ -1,65 +1,88 @@
 .sticky-cta-bar {
   position: fixed;
-  left: 12px;
-  right: 12px;
-  bottom: 10px;
-  z-index: 34;
+  left: 18px;
+  bottom: 18px;
+  z-index: 999;
+
   display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.45rem;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  background: rgba(0, 93, 145, 0.78);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 24px rgba(0, 42, 72, 0.25);
+  flex-direction: column;
+  gap: 0.6rem;
+
+  padding: 0.65rem;
+  border-radius: 14px;
+
+  background: rgba(15, 47, 85, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+
+  width: fit-content;
 }
 
+/* Base button */
 .sticky-cta-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.35rem;
-  padding: 0.5rem 0.85rem;
-  border-radius: 11px;
-  background: linear-gradient(145deg, #f58634, #dc6f1f);
-  color: #ffffff;
-  text-decoration: none;
+  gap: 0.4rem;
+
+  padding: 0.55rem 0.95rem;
+  border-radius: 10px;
+
   font-weight: 600;
-  font-size: 0.86rem;
-  min-width: 124px;
+  font-size: 0.85rem;
   letter-spacing: 0.01em;
-  transition: transform 0.2s ease, filter 0.2s ease;
+
+  text-decoration: none;
+  color: #ffffff;
+
+  transition: transform 0.18s ease, background 0.18s ease, opacity 0.18s ease;
+  min-width: 140px;
+}
+
+/* Primary CTA */
+.sticky-cta-btn {
+  background: linear-gradient(135deg, #f58634, #d96512);
 }
 
 .sticky-cta-btn:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.03);
+  transform: translateX(4px);
+  opacity: 0.95;
 }
 
+/* Secondary CTA */
 .sticky-cta-btn.secondary {
-  background: rgba(255, 255, 255, 0.94);
-  color: #005d91;
+  background: rgba(255, 255, 255, 0.95);
+  color: #0f2f55;
 }
 
+/* WhatsApp CTA */
 .sticky-cta-btn.whatsapp {
-  background: linear-gradient(145deg, #24c25d, #179347);
+  background: linear-gradient(135deg, #25d366, #128c7e);
 }
 
+/* Desktop refinement */
 @media (min-width: 1024px) {
   .sticky-cta-bar {
-    left: auto;
-    right: 16px;
-    bottom: 18px;
-    border-radius: 14px;
-    width: auto;
-    box-shadow: 0 12px 26px rgba(9, 31, 56, 0.3);
+    left: 22px;
+    bottom: 22px;
   }
 }
 
+/* Mobile: horizontal bar at bottom */
 @media (max-width: 700px) {
+  .sticky-cta-bar {
+    left: 12px;
+    right: 12px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .sticky-cta-btn {
-    min-width: 0;
     flex: 1;
+    min-width: 0;
+    font-size: 0.8rem;
   }
 }

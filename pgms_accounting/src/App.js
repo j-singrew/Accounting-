@@ -8,6 +8,8 @@ import Contact from './pages/contact/contact';
 import Blog from './pages/blog/blog';
 import BlogPost from './pages/blog/BlogPost';
 import StickyCTA from './components/StickyCTA/StickyCTA';
+import ScrollTopButton from "./pages/ScrollButton/ScrollTopButton";
+import ScrollToTop from "./ScrollToTop";
 
 function AppContent() {
   const location = useLocation();
@@ -48,7 +50,9 @@ function AppContent() {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <AppContent />
+      <ScrollTopButton />
     </Router>
   );
 }

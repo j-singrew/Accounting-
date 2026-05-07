@@ -1,28 +1,35 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './StickyCTA.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Phone, MessageCircle, Mail } from "lucide-react";
+import "./StickyCTA.css";
 
 function StickyCTA() {
   return (
-    <div className="sticky-cta-bar">
+    <div className="sticky-cta-bar" role="navigation" aria-label="Quick contact actions">
+
+      {/* WhatsApp */}
       <a
         href="https://wa.me/27682512998"
         target="_blank"
         rel="noopener noreferrer"
         className="sticky-cta-btn whatsapp"
-        aria-label="Chat with us on WhatsApp"
       >
-        <span aria-hidden="true">💬</span>
+        <MessageCircle size={18} />
         <span>WhatsApp</span>
       </a>
+
+      {/* Call */}
       <a href="tel:+27682512998" className="sticky-cta-btn secondary">
-        <span aria-hidden="true">📞</span>
+        <Phone size={18} />
         <span>Call</span>
       </a>
-      <Link to="/Contact" className="sticky-cta-btn">
-        <span aria-hidden="true">✉️</span>
+
+      {/* Email / Consultation */}
+      <Link to="/contact" className="sticky-cta-btn">
+        <Mail size={18} />
         <span>Consultation</span>
       </Link>
+
     </div>
   );
 }
