@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Accounting/static/css/main.f6959c63.css",
-    "main.js": "/Accounting/static/js/main.2d1d7f72.js",
-    "static/js/453.062e455d.chunk.js": "/Accounting/static/js/453.062e455d.chunk.js",
-    "static/media/pexels-leeloothefirst-6929024.jpg": "/Accounting/static/media/pexels-leeloothefirst-6929024.bff897d2035c53ba923f.jpg",
-    "index.html": "/Accounting/index.html",
-    "main.f6959c63.css.map": "/Accounting/static/css/main.f6959c63.css.map",
-    "main.2d1d7f72.js.map": "/Accounting/static/js/main.2d1d7f72.js.map",
-    "453.062e455d.chunk.js.map": "/Accounting/static/js/453.062e455d.chunk.js.map"
+    "main.css": "/PGMS_Accounting-/static/css/main.f6959c63.css",
+    "main.js": "/PGMS_Accounting-/static/js/main.06e6d860.js",
+    "static/js/453.062e455d.chunk.js": "/PGMS_Accounting-/static/js/453.062e455d.chunk.js",
+    "static/media/pexels-leeloothefirst-6929024.jpg": "/PGMS_Accounting-/static/media/pexels-leeloothefirst-6929024.bff897d2035c53ba923f.jpg",
+    "index.html": "/PGMS_Accounting-/index.html",
+    "main.f6959c63.css.map": "/PGMS_Accounting-/static/css/main.f6959c63.css.map",
+    "main.06e6d860.js.map": "/PGMS_Accounting-/static/js/main.06e6d860.js.map",
+    "453.062e455d.chunk.js.map": "/PGMS_Accounting-/static/js/453.062e455d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f6959c63.css",
-    "static/js/main.2d1d7f72.js"
+    "static/js/main.06e6d860.js"
   ]
 }
